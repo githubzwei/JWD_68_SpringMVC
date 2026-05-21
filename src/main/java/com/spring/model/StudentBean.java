@@ -22,4 +22,5 @@ public class StudentBean {
 	@NotNull
 	private Integer age;
 	
+	private String password;
 }

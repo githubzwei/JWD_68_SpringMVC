@@ -32,6 +32,10 @@ color:red;
 	<form:errors path="age" cssClass="error"></form:errors>
 	<br>
 	
+	<form:label path="password">Password</form:label>
+	<form:password path="password"/>
+	<br>
+	
 	<input type="submit" value="create">
 </form:form>
 </body>

@@ -10,6 +10,7 @@
 <h3>Student Information</h3>
 Id : ${studObj.id} <br>
 Name : ${studObj.name} <br>
-Age : ${studObj.age}
+Age : ${studObj.age} <br>
+Password : ${studObj.password}
 </body>
 </html>
