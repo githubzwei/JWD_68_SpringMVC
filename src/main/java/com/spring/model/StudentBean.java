@@ -22,6 +22,8 @@ public class StudentBean {
 	@NotNull
 	private Integer age;
 	
+	
+
 	@NotEmpty
 	private String email;
 }
