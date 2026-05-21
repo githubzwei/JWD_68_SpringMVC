@@ -22,8 +22,7 @@ public class StudentBean {
 	@NotNull
 	private Integer age;
 	
-	
-
+//	update aps
 	@NotEmpty
 	private String email;
 }
