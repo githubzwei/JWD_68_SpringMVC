@@ -1,5 +1,8 @@
 package com.spring.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -29,4 +32,15 @@ public class StudentController {
 		m.addAttribute("studObj", obj);
 		return "student-info";
 	}
+	
+	@ModelAttribute("framework_list")
+	public List<String> getAllFrameworks(){
+		List<String> lst = new ArrayList<>();
+		lst.add("Spring Framework");
+		lst.add("Bootstrap");
+		lst.add("Collection Framework");
+		
+		return lst;
+	}
+	
 }

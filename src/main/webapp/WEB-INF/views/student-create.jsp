@@ -36,7 +36,19 @@ color:red;
 	<form:password path="password"/>
 	<br>
 	
-	<input type="submit" value="create">
+	<form:label path="address">Address</form:label>
+	<form:textarea path="address"/>
+	<br>
+	
+	<form:label path="newsletter">Newsletter</form:label>
+	<form:checkbox path="newsletter"/>
+	
+	<br>
+	<form:label path="frameworks">Frameworks</form:label>
+	<form:checkboxes items="${framework_list}" path="frameworks"/>
+	
+	<br>
+	<input type="submit" value="create"> 
 </form:form>
 </body>
 </html>
