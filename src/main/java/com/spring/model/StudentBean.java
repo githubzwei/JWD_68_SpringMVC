@@ -22,7 +22,11 @@ public class StudentBean {
 	@NotNull
 	private Integer age;
 	
+<<<<<<< Updated upstream
 //	update aps123
+=======
+	
+>>>>>>> Stashed changes
 	@NotEmpty
 	private String email;
 }
