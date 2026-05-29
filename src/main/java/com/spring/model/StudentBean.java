@@ -36,4 +36,5 @@ public class StudentBean {
 	private String country;
 	private List<String> skills;
 	
+	
 }
