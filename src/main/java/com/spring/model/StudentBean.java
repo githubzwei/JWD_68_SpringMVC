@@ -14,7 +14,7 @@ import lombok.Setter;
 @Setter
 public class StudentBean {
 
-	@NotNull
+	//@NotNull
 	private Integer id;
 	
 	@NotEmpty
@@ -31,5 +31,9 @@ public class StudentBean {
 	private boolean newsletter;
 	
 	private List<String> frameworks;
+	private String gender;
+	private Integer favNumber;
+	private String country;
+	private List<String> skills;
 	
 }

@@ -21,8 +21,14 @@ Frameworks :
 
 <c:forEach items="${studObj.frameworks}" var="frame">
 <p>${frame}</p>
-</c:forEach>
-
+</c:forEach> <br>
+Gender : ${studObj.gender} <br>
+Favorite Number : ${studObj.favNumber} <br>
+Country : ${studObj.country} <br>
+Skills : 
+<c:forEach items="${studObj.skills}" var="skill">
+<p>${skill}</p>
+</c:forEach> <br>
 
 </body>
 </html>

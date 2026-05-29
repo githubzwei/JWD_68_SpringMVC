@@ -1,7 +1,9 @@
 package com.spring.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -41,6 +43,37 @@ public class StudentController {
 		lst.add("Collection Framework");
 		
 		return lst;
+	}
+	
+	@ModelAttribute("number_list")
+	public List<Integer> getAllNumbers(){
+		List<Integer> lst = new ArrayList<Integer>();
+		lst.add(1);
+		lst.add(2);
+		lst.add(3);
+		lst.add(4);
+		
+		return lst;
+	}
+	
+	@ModelAttribute("country_list")
+	public Map<String, String> getAllCountries(){
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("MM", "Myanmar");
+		map.put("JP", "Japan");
+		map.put("US", "United States");
+		
+		return map;
+	}
+	
+	@ModelAttribute("skill_list")
+	public Map<String, String> getAllSkills(){
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("Hibernate", "Hibernate");
+		map.put("Spring MVC", "Spring MVC");
+		map.put("Bootstrap", "Bootstrap");
+		
+		return map;
 	}
 	
 }

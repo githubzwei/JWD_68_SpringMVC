@@ -17,9 +17,11 @@ color:red;
 </head>
 <body>
 <form:form modelAttribute="studObj" method="post" action="student-create">
-	<form:label path="id">Id</form:label>
+	<%-- <form:label path="id">Id</form:label>
 	<form:input path="id"/> 
-	<form:errors path="id" cssClass="error"></form:errors>
+	<form:errors path="id" cssClass="error"></form:errors> --%>
+	
+	<form:hidden path="id" value="1"/>
 	<br>
 	
 	<form:label path="name">Name</form:label>
@@ -47,6 +49,24 @@ color:red;
 	<form:label path="frameworks">Frameworks</form:label>
 	<form:checkboxes items="${framework_list}" path="frameworks"/>
 	
+	<br>
+	<form:label path="gender">Gender</form:label>
+	<form:radiobutton path="gender" value="male"/> Male
+	<form:radiobutton path="gender" value="female"/> Female
+	<br>
+	<form:label path="favNumber">Favorite Number</form:label>
+	<form:radiobuttons path="favNumber" items="${number_list}"/>
+	<br>
+	<form:label path="country">Country</form:label>
+	<form:select path="country">
+	<form:option value="none">None</form:option>
+	<form:options items="${country_list}"/>
+	</form:select>
+	<br>
+	<form:label path="skills">Skills</form:label>
+	<form:select path="skills" multiple="multiple"> 
+	<form:options items="${skill_list}"/>	
+	</form:select>
 	<br>
 	<input type="submit" value="create"> 
 </form:form>
