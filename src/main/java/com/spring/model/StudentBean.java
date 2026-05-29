@@ -1,7 +1,5 @@
 package com.spring.model;
 
-import java.util.List;
-
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
@@ -14,7 +12,7 @@ import lombok.Setter;
 @Setter
 public class StudentBean {
 
-	//@NotNull
+	@NotNull
 	private Integer id;
 	
 	@NotEmpty
